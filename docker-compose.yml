@@ -10,4 +10,10 @@ services:
     ports:
       - 27017:27017
     volumes:
-      - ./momgo-data-4.4:/data/db
+      - ./mongo-data-4.4:/data/db
+  rmq:
+    image: rabbitmq:3-management
+    restart: always
+    ports:
+      - 5672:5672
+      - 15672:15672

@@ -14,5 +14,6 @@ const getMongoString = (configService: ConfigService) =>
     'MONGO_PASSWORD'
   )}@${configService.get('MONGO_HOST')}:${configService.get(
     'MONGO_PORT'
-  )}/${configService.get('MONGO_DATABASE')}
-      ?authSource=${configService.get('MONGO_AUTHDATABASE')}`;
+  )}/${configService.get('MONGO_DATABASE')}?authSource=${configService.get(
+    'MONGO_AUTHDATABASE'
+  )}`;
